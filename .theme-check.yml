@@ -1,11 +1,5 @@
 extends: theme-check
 
-exclude:
-  - config/settings_data.json
-  - templates/custom-*.liquid
-  - snippets/debug.liquid
-  - templates/search.json.liquid
-
 ThemeCheck/TranslationKeyExists:
   enabled: false
 
@@ -25,6 +19,7 @@ ThemeCheck/JsonKeySortOrder:
   enabled: true
 
 ThemeCheck/EmptyFile:
+  enabled: true
   exclude:
     - snippets/empty-placeholder.liquid
 
