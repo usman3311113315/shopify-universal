@@ -1,0 +1,10 @@
+# Shopify theme .gitignore
+
+.DS_Store
+node_modules/
+*.log
+*.zip
+*.tmp
+.env
+.vscode/
+dist/
