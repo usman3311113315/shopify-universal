@@ -1,0 +1,41 @@
+extends: theme-check
+
+exclude:
+  - config/settings_data.json
+  - templates/custom-*.liquid
+  - snippets/debug.liquid
+  - templates/search.json.liquid
+
+ThemeCheck/TranslationKeyExists:
+  enabled: false
+
+ThemeCheck/DeprecatedFilter:
+  enabled: true
+
+ThemeCheck/HardcodedTranslation:
+  enabled: true
+
+ThemeCheck/LineLength:
+  max_length: 140
+
+ThemeCheck/AssetSize:
+  max_size: 500000
+
+ThemeCheck/JsonKeySortOrder:
+  enabled: true
+
+ThemeCheck/EmptyFile:
+  exclude:
+    - snippets/empty-placeholder.liquid
+
+ThemeCheck/UnknownSchemaSetting:
+  severity: error
+
+ThemeCheck/RemoteAsset:
+  enabled: false
+
+ThemeCheck/ImgLazyLoading:
+  enabled: true
+
+ThemeCheck/UnusedAssign:
+  enabled: true
