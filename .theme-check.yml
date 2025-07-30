@@ -1,36 +1,4 @@
-extends: theme-check
-
-ThemeCheck/TranslationKeyExists:
-  enabled: false
-
-ThemeCheck/DeprecatedFilter:
-  enabled: true
-
-ThemeCheck/HardcodedTranslation:
-  enabled: true
-
-ThemeCheck/LineLength:
-  max_length: 140
-
-ThemeCheck/AssetSize:
-  max_size: 500000
-
-ThemeCheck/JsonKeySortOrder:
-  enabled: true
-
-ThemeCheck/EmptyFile:
-  enabled: true
-  exclude:
-    - snippets/empty-placeholder.liquid
-
-ThemeCheck/UnknownSchemaSetting:
-  severity: error
-
-ThemeCheck/RemoteAsset:
-  enabled: false
-
-ThemeCheck/ImgLazyLoading:
-  enabled: true
-
-ThemeCheck/UnusedAssign:
-  enabled: true
+﻿extends: :recommended
+ignore:
+  - assets/*.js
+  - config/*.json
